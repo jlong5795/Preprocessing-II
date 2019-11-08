@@ -184,17 +184,37 @@ img {
   width: 40%;
   padding-left: 13%;
 }
-nav {
+.navigation nav {
   width: 35%;
   padding-right: 13%;
   display: flex;
   justify-content: space-evenly;
 }
-nav a {
+.navigation nav a {
   text-decoration: none;
   color: #212529;
   padding: 4%;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .navigation {
+    display: block;
+    width: 500px;
+  }
+  .navigation .title {
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    text-align: center;
+  }
+  .navigation nav {
+    width: 100%;
+    padding: 0;
+  }
+  .navigation nav a {
+    width: 22%;
+    padding-bottom: 1%;
+  }
 }
 .footer {
   width: 100%;
