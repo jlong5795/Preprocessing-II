@@ -104,6 +104,10 @@
 
       .btn button{
         .btn-format(@button-bg, @main-bg, @btn-width, @btn-height);
+
+        &:hover {
+          .btn-format(red, @button-bg, @btn-width, @btn-height);
+        }
       }
     }
 
@@ -123,6 +127,11 @@
           .btn-format(@button-bg, @main-bg, @btn-width: 100%, @btn-height);
           margin:auto;
           
+          &:hover {
+            .btn-format(red, @button-bg, @btn-width: 100%, @btn-height);
+            margin: auto;
+          }
+
           }
         }  
       }
