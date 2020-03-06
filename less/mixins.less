@@ -1,1 +1,21 @@
 // Mixins in here
+
+.flex-default() {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.page-break(@navigation-border){
+    border-bottom: dashed @navigation-border 2px;
+}
+
+.btn-format(@button-bg, @main-bg, @btn-width, @btn-height){
+    background-color: @button-bg;
+    color: @main-bg;
+    width: @btn-width;
+    height: @btn-height;
+    font-size: 2rem;
+    margin: 0 10px 20px;
+    border-radius: 15px;
+
+}
